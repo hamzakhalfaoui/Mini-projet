@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    message = os.getenv("APP_MESSAGE", "Bonjour depuis Docker ! (v1.0.0)")
+    message = os.getenv("APP_MESSAGE", "Bonjour depuis Docker ! (v1.0.1)")
     return f"<h1>{message}</h1>"
 
 if __name__ == "__main__":
